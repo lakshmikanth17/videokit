@@ -15,7 +15,9 @@ class SearchBar extends React.Component {
         //to stop from sending req to backend(default action)
         event.preventDefault();
 
-        //TODO: make sure a callback from parent Component
+        //callback from parent Component
+        // (parent component is told where the current search is)
+        this.props.onFormSubmitt(this.state.VkitSearch);
     }
 
 
